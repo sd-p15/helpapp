@@ -16,24 +16,30 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    //deklaracja zgody na polaczenie
     private static final int REQUEST_CALL =1;
-
     @Override
+    //onCreate - odpalanie aplikacji
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //zdjecie sluchawki - nawigacja
         ImageView imageCall = findViewById(R.id.imageCall);
-
+        //dodanie akcji na nacisniecie sluchawki
         imageCall.setOnClickListener(new View.OnClickListener() {
-            @Override
+            //komendy podczas akcji nacisniecia ikony
             public void onClick(View v) {
-                makePhoneCall("123456789");
+                //wykonaj polaczenie
+                makePhoneCall();
+                //przyszłe zacznij nagrywanie
+                //przyszłe nagraj kamere
+                //przyszłe udostepnij lokalizacje
             }
         });
     }
-
-    private void makePhoneCall(String number){
+    //funkcja wykonania połaczenia
+    private void makePhoneCall(){
+        String number ="134673334";
         if(ContextCompat.checkSelfPermission(MainActivity.this,
                 Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(MainActivity.this,
@@ -45,12 +51,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
+    //funkcja uzyskania dostepu do wykonywania połączen przez aplikacje
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if(requestCode == REQUEST_CALL) {
             if(grantResults.length >0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                makePhoneCall("123456789");
+                makePhoneCall();
             }else {
                 Toast.makeText(this, "Permission DENIED", Toast.LENGTH_SHORT).show();
             }
