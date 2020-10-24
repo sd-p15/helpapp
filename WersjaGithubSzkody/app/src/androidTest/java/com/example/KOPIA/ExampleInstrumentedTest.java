@@ -1,4 +1,4 @@
-package com.example.szkody;
+package com.example.KOPIA;
 
 import android.content.Context;
 

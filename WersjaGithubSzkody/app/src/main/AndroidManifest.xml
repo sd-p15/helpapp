@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.szkody">
+    package="com.example.KOPIA">
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA"/>
     <application
@@ -10,18 +10,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Szkody">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.KOPIA.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SzkodyZdjecie"
-            android:parentActivityName=".SzkodyPodkategoria"/>
-        <activity android:name=".SzkodyPodkategoria"
-            android:parentActivityName=".SzkodyKategoria"/>
-        <activity android:name=".SzkodyKategoria" />
+        <activity android:name="com.example.KOPIA.SzkodyZdjecie"
+            android:parentActivityName="com.example.KOPIA.SzkodyPodkategoria"/>
+        <activity android:name="com.example.KOPIA.SzkodyPodkategoria"
+            android:parentActivityName="com.example.KOPIA.SzkodyKategoria"/>
+        <activity android:name="com.example.KOPIA.SzkodyKategoria" />
     </application>
 
 </manifest>

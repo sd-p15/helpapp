@@ -1,4 +1,4 @@
-package com.example.szkody;
+package com.example.KOPIA;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,8 +6,6 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -80,9 +78,23 @@ public class SzkodyZdjecie extends AppCompatActivity {
         if (requestCode == 100) {
             Bitmap captureImage = (Bitmap) data.getExtras().get("data");
             zdjecie.setImageBitmap(captureImage);
+
         }
     }
     public void wyslij() {
+        //nazwa maila zbiorczego
+        String mail = "testapp7040@gmail.com";
+        //tytuł maila
+        String subject ="Zgłoszenie szkody: "+kategoria;
+        //formatka
+        String message = "Zgłaszam szkodę : "+ kategoria+ "\n" +
+                "Rodzaj podkategorii : "+ podkategoria +"\n" +
+                "Komentarz: "+ komentarz +"\n" +
+                "Lokalizacja gps: ";
+        //send Mail
+        JavaMailAPI javaMailAPI = new JavaMailAPI(this, mail, subject, message);
+
+        javaMailAPI.execute();
 
     }
 }

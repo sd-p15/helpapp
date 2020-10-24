@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.szkody"
+        applicationId "com.example.WersjaGithubSzkody"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -38,7 +38,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation files('libs/activation.jar')
-    implementation files('libs/additional.jar')
+    implementation files('libs/additionnal.jar')
     implementation files('libs/mail.jar')
 
 
