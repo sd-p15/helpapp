@@ -26,17 +26,17 @@ public class szkody extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_szkody);
-        imageButton = (ImageButton) findViewById(R.id.imageButton);
-        imageButton2 = (ImageButton) findViewById(R.id.imageButton2);
-        imageButton3 = (ImageButton) findViewById(R.id.imageButton3);
-        imageButton4 = (ImageButton) findViewById(R.id.imageButton4);
-        imageButton5 = (ImageButton) findViewById(R.id.imageButton5);
-        imageButton6 = (ImageButton) findViewById(R.id.imageButton6);
-        imageButton7 = (ImageButton) findViewById(R.id.imageButton7);
-        imageButton8 = (ImageButton) findViewById(R.id.imageButton8);
-        imageButton9 = (ImageButton) findViewById(R.id.imageButton9);
-        imageButton10 = (ImageButton) findViewById(R.id.imageButton10);
-        imageButton11 = (ImageButton) findViewById(R.id.imageButton11);
+        imageButton = (ImageButton) findViewById(R.id.buttonDrogi);
+        imageButton2 = (ImageButton) findViewById(R.id.buttonKomunikacja);
+        imageButton3 = (ImageButton) findViewById(R.id.buttonLokalowe);
+        imageButton4 = (ImageButton) findViewById(R.id.buttonOdsniezanie);
+        imageButton5 = (ImageButton) findViewById(R.id.buttonSmieci);
+        imageButton6 = (ImageButton) findViewById(R.id.buttonDewastacja);
+        imageButton7 = (ImageButton) findViewById(R.id.buttonKanalizacyjne);
+        imageButton8 = (ImageButton) findViewById(R.id.buttonZielen);
+        imageButton9 = (ImageButton) findViewById(R.id.buttonZwierzeta);
+        imageButton10 = (ImageButton) findViewById(R.id.buttonPorzadek);
+        imageButton11 = (ImageButton) findViewById(R.id.buttonInne);
 
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override

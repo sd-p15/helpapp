@@ -3,7 +3,6 @@ package com.example.gui;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -17,9 +16,9 @@ public class wiedza extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wiedza);
-        imageButton12 = (ImageButton) findViewById(R.id.imageButton12);
-        imageButton13 = (ImageButton) findViewById(R.id.imageButton13);
-        imageButton14 = (ImageButton) findViewById(R.id.imageButton14);
+        imageButton12 = (ImageButton) findViewById(R.id.buttoninfoopandemii);
+        imageButton13 = (ImageButton) findViewById(R.id.buttonBazaWiedzy);
+        imageButton14 = (ImageButton) findViewById(R.id.buttonQuiz);
 
         imageButton12.setOnClickListener(new View.OnClickListener() {
             @Override
