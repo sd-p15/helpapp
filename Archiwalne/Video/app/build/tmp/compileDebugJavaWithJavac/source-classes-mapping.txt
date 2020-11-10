@@ -1,0 +1,4 @@
+com/example/video/MainActivity.java
+ com.example.video.MainActivity
+com/example/video/BuildConfig.java
+ com.example.video.BuildConfig

@@ -1,0 +1,6 @@
+com/example/recordvideo/BuildConfig.java
+ com.example.recordvideo.BuildConfig
+com/example/recordvideo/VideoPlayActivity.java
+ com.example.recordvideo.VideoPlayActivity
+com/example/recordvideo/MainActivity.java
+ com.example.recordvideo.MainActivity

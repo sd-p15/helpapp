@@ -1,0 +1,8 @@
+AndroidManifest - dodane wymagania posiadania kamery w telefonie 
+Activity Main - zmiana Layoutu na Linear, dodanie przycisków
+MainActivity.java - rozpoczęcie nagrywania, rezultat - film, zwrot czy pomyślnie zakończono nagrywanie,
+VideoPlayActivity.java - utworzenie aktywności - wyświetlenie filmu
+activity_video_play_activity - utworzenie okna do odtworzenia nagrania
+
+
+https://www.youtube.com/watch?v=dK4irWFs8C8
