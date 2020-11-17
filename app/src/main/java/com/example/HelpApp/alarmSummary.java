@@ -36,14 +36,18 @@ public class alarmSummary extends AppCompatActivity {
 
     }
 
-
+    // operacje jeśli zostanie wybrany przycisk "wyślij"
     public void openStatus1() {
-        Intent intent = new Intent(this, alarmStusus.class);
-        startActivity(intent);
+        Intent send = new Intent(this, mail.class);     // uruchom skrypt mail
+        startActivity(send);
+
+//        Intent intent = new Intent(this, alarmStusus.class);    // uruchom skrypt alarmStatus
+//        startActivity(intent);
        };
 
+    // operacje jeśli zostanie wybrany przycisk "popraw"
     public void openStatus2() {
-        Intent intent = new Intent(this, alarm.class);
+        Intent intent = new Intent(this, alarm.class);      // uruchom skrypt alarm
         startActivity(intent);
     };
 

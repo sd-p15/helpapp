@@ -3,10 +3,16 @@ package com.example.HelpApp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class alarmPodkategoria extends AppCompatActivity {
     String alarmPodkategoria;
@@ -64,6 +70,7 @@ public class alarmPodkategoria extends AppCompatActivity {
         dalej.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                writeToCSV();
                 openPodkategorie();
             }
         });
@@ -74,6 +81,56 @@ public class alarmPodkategoria extends AppCompatActivity {
         Intent intent = new Intent(this, alarmLokalizacja.class);
         intent.putExtra(PODKATEGORIA,text);
         startActivity(intent);
-    };
+    }
+
+    //tutaj zapisz podkategorię do CSV
+//    public void writeToCSV() {
+//        BufferedReader csvReader = null;
+//        String head = "category2";
+//        int index = 3;
+//        String[] data = null;
+//        try {
+//            String sCurrentLine;
+//            csvReader = new BufferedReader(new FileReader("form.csv"));
+//
+//            while ((sCurrentLine = csvReader.readLine()) != null) {
+//            }
+//            data = sCurrentLine.split(",");
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } finally {
+//            try {
+//                if (csvReader != null) csvReader.close();
+//            } catch (IOException ex) {
+//                ex.printStackTrace();
+//            }
+//        }
+//
+//        data[index] = alarmPodkategoria;
+//
+//        FileWriter csvWriter = null;
+//        try {
+//            csvWriter = new FileWriter("form.csv");
+//
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+//                csvWriter.append(String.join(",", data));
+//            }
+//
+//            csvWriter.flush();
+//            csvWriter.close();
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } finally {
+//            try {
+//                if (csvWriter != null) csvWriter.close();
+//            } catch (IOException ex) {
+//                ex.printStackTrace();
+//            }
+//        }
+//
+//    }
+
 
 }

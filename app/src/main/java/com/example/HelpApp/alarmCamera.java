@@ -46,15 +46,7 @@ public class alarmCamera extends AppCompatActivity {
 
     }
 
-    public void PlayVideo(View view)
-    {
-        Intent playIntent = new Intent(this, VideoPlayAcitvity.class);
-        playIntent.putExtra("videoUri",videoUri.toString()); //tutaj to videoUri jest z VideoPlayActivity, dzięki temu możemy odtworzyć
-        startActivity(playIntent); //rezultat aktywności - film
-
-    }
-
-    protected void onActiviyResult(int requestCode, int resultCode, Intent data) {
+        protected void onActiviyResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == VIDEO_REQUEST && resultCode == RESULT_OK) //daje zwrot czy aktywność została pomyślnie zakończona
         {
             videoUri = data.getData();

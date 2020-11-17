@@ -1,16 +1,28 @@
 package com.example.HelpApp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class alarm extends AppCompatActivity {
     String alarmKategoria;
     public static final String KATEGORIA ="Alarm.kategoria";
+
+    public alarm() throws FileNotFoundException {
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,10 +70,62 @@ public class alarm extends AppCompatActivity {
         dalej.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                writeToCSV();
                 openPodkategorie();
             }
         });
     }
+
+
+    //tutaj zapisz kategorię do CSV
+//    public void writeToCSV() {
+//        BufferedReader csvReader = null;
+//        String head = "category1";
+//        int index = 3;
+//        String[] data = null;
+//        try {
+//            String sCurrentLine;
+//            csvReader = new BufferedReader(new FileReader("form.csv"));
+//
+//            while ((sCurrentLine = csvReader.readLine()) != null) {
+//            }
+//            data = sCurrentLine.split(",");
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } finally {
+//            try {
+//                if (csvReader != null) csvReader.close();
+//            } catch (IOException ex) {
+//                ex.printStackTrace();
+//            }
+//        }
+//
+//        data[index] = alarmKategoria;
+//
+//        FileWriter csvWriter = null;
+//        try {
+//            csvWriter = new FileWriter("form.csv");
+//
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+//                csvWriter.append(String.join(",", data));
+//            }
+//
+//            csvWriter.flush();
+//            csvWriter.close();
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } finally {
+//            try {
+//                if (csvWriter != null) csvWriter.close();
+//            } catch (IOException ex) {
+//                ex.printStackTrace();
+//            }
+//        }
+//
+//    }
+
 
     public void openPodkategorie() {
         String text=alarmKategoria;
