@@ -1,0 +1,15 @@
+java - com.example.registration
+
+Nowa activity - Signup_form 
+Nowa - Login_form 
+
+Activity_signup_form.xml - tworzy pola do wpisywania danych, z rozmieszczeniem, kolorami, czy wyboremm (kobieta, mężczyzna)
++przycisk Rejestracja 
+(android:background="@color/background" - tło)
+
+build.gradle (:app) - potrzebne biblioteki
+
+res - drawable - nowy button_rounded.xml - kolor przycisku w android:background="@drawable/button_rounded"
+
+
+activity_login_form.xml - pola do wpisywania danych przy logowaniu, plus przejście do rejestracji
