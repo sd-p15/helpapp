@@ -41,7 +41,7 @@ public class alarmPodkategoria extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 alarmPodkategoria = "Wypadek Drogowy";
-                text.setText("Kategoria: " + alarmPodkategoria);
+                text.setText("Podkategoria: " + alarmPodkategoria);
             }
         });
 

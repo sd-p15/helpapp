@@ -11,13 +11,9 @@
         android:id="@+id/buttonPodkategoria1"
         android:layout_width="250dp"
         android:layout_height="65dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="75dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="413dp"
+        android:layout_marginBottom="414dp"
         android:foreground="@drawable/poar_b"
         android:text="Pożar Budynku" />
 
@@ -25,13 +21,9 @@
         android:id="@+id/buttonPodkategoria2"
         android:layout_width="250dp"
         android:layout_height="65dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginEnd="75dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="340dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="338dp"
         android:foreground="@drawable/poar_t"
         android:text="Pożar Terenu" />
 
@@ -39,13 +31,9 @@
         android:id="@+id/buttonPodkategoria3"
         android:layout_width="250dp"
         android:layout_height="65dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="74dp"
-        android:layout_marginRight="74dp"
-        android:layout_marginBottom="270dp"
+        android:layout_marginBottom="264dp"
         android:foreground="@drawable/poar_o"
         android:text="Pożar Obiektu" />
 
@@ -53,41 +41,40 @@
         android:id="@+id/buttonDalej"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="147dp"
-        android:layout_marginRight="147dp"
-        android:layout_marginBottom="141dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="134dp"
+        android:foreground="@drawable/dalej"
         android:text="Dalej"
         app:backgroundTint="#2196F3" />
 
     <TextView
         android:id="@+id/textViewKategoria"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
+        android:layout_height="29dp"
+        android:layout_alignBottom="@+id/buttonDalej"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="139dp"
-        android:layout_marginRight="139dp"
-        android:layout_marginBottom="517dp"
+        android:layout_marginBottom="424dp"
         android:text="Wybierz kategorię " />
 
     <TextView
         android:id="@+id/textViewPodkategoria"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/buttonDalej"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="374dp"
+        android:text="Wybierz podkategorię" />
+
+    <Button
+        android:id="@+id/buttonPozarInne"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="161dp"
-        android:layout_marginEnd="131dp"
-        android:layout_marginRight="131dp"
-        android:layout_marginBottom="552dp"
-        android:text="Wybierz podkategorię" />
+        android:layout_marginBottom="192dp"
+        android:foreground="@drawable/inne_przycisk"
+        android:text="Button"
+        app:backgroundTint="#00FFFFFF" />
 
 </RelativeLayout>

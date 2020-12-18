@@ -29,6 +29,7 @@ public class alarmPodkategoriePomocMedyczna extends AppCompatActivity {
         Button podkategoria4 = (Button) findViewById(R.id.buttonPodkategoria4);
         Button podkategoria5 = (Button) findViewById(R.id.buttonPodkategoria5);
         Button podkategoria6 = (Button) findViewById(R.id.buttonPodkategoria6);
+        Button podkategoria7 = (Button) findViewById(R.id.buttonPodkategoria7);
         Button dalej = (Button) findViewById(R.id.buttonDalej);
         TextView text = (TextView) findViewById(R.id.textViewPodkategoria);
         TextView textKategoria = (TextView) findViewById(R.id.textViewKategoria);
@@ -76,6 +77,13 @@ public class alarmPodkategoriePomocMedyczna extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 alarmPodkategoria = "Zatrucie";
+                text.setText("Podkategoria: " + alarmPodkategoria);
+            }
+        });
+        podkategoria7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alarmPodkategoria = "Inne";
                 text.setText("Podkategoria: " + alarmPodkategoria);
             }
         });

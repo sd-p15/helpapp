@@ -30,6 +30,7 @@ public class alarmPodkategoriePrzemoc extends AppCompatActivity {
         Button podkategoria2 = (Button) findViewById(R.id.buttonPodkategoria2);
         Button podkategoria3 = (Button) findViewById(R.id.buttonPodkategoria3);
         Button podkategoria4 = (Button) findViewById(R.id.buttonPodkategoria4);
+        Button podkategoria5 = (Button) findViewById(R.id.buttonPrzemocInne);
         Button dalej = (Button) findViewById(R.id.buttonDalej);
         TextView text = (TextView) findViewById(R.id.textViewPodkategoria);
         TextView textKategoria = (TextView) findViewById(R.id.textViewKategoria);
@@ -63,6 +64,13 @@ public class alarmPodkategoriePrzemoc extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 alarmPodkategoria = "Cyberprzemoc";
+                text.setText("Podkategoria: " + alarmPodkategoria);
+            }
+        });
+        podkategoria5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alarmPodkategoria = "Inne ";
                 text.setText("Podkategoria: " + alarmPodkategoria);
             }
         });

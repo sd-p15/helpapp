@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00FFFFFF"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
 
@@ -14,15 +14,15 @@
 
     <Button
         android:id="@+id/buttonAlarm"
-        android:layout_width="276dp"
-        android:layout_height="126dp"
+        android:layout_width="275dp"
+        android:layout_height="139dp"
         android:layout_above="@+id/buttonSzkody"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginStart="57dp"
         android:layout_marginLeft="57dp"
         android:layout_marginTop="114dp"
-        android:layout_marginBottom="411dp"
+        android:layout_marginBottom="412dp"
         android:background="#002B1111"
         android:foreground="@drawable/alarm_"
         app:backgroundTint="#001785DD"

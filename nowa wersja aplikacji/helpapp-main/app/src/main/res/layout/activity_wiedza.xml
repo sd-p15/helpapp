@@ -10,13 +10,14 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Informacje o pandemii"
+        android:text="Komunikaty "
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttoninfoopandemii"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintVertical_bias="0.031" />
 
     <ImageButton
         android:id="@+id/buttoninfoopandemii"
@@ -61,8 +62,8 @@
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="187dp"
-        android:layout_height="50dp"
+        android:layout_width="112dp"
+        android:layout_height="53dp"
         android:text="WIEDZA"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"

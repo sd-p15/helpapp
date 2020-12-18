@@ -6,89 +6,89 @@
     android:layout_height="match_parent"
     tools:context=".alarmPodkategoriePrzemoc">
 
+
     <Button
         android:id="@+id/buttonPodkategoria1"
         android:layout_width="250dp"
         android:layout_height="65dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="217dp"
-        android:layout_marginRight="217dp"
-        android:layout_marginBottom="435dp"
-        android:text="Atak terrorystyczny" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="419dp"
+        android:foreground="@drawable/przemoc_at"
+        android:text="Atak terrorystyczny"
+        app:backgroundTint="#00FFFFFF" />
 
     <Button
         android:id="@+id/buttonPodkategoria2"
-        android:layout_width="142dp"
-        android:layout_height="78dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:layout_marginBottom="420dp"
-        android:text="Napad" />
-
-    <Button
-        android:id="@+id/buttonPodkategoria3"
-        android:layout_width="170dp"
-        android:layout_height="87dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="218dp"
-        android:layout_marginRight="218dp"
-        android:layout_marginBottom="282dp"
-        android:text="Bójka" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="343dp"
+        android:foreground="@drawable/przemoc_nw"
+        android:text="Napad"
+        app:backgroundTint="#00FFFFFF" />
 
     <Button
         android:id="@+id/buttonPodkategoria4"
-        android:layout_width="155dp"
-        android:layout_height="104dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:layout_marginBottom="279dp"
-        android:text="Cyberprzemoc" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="270dp"
+        android:foreground="@drawable/przemoc_c"
+        android:text="Cyberprzemoc"
+        app:backgroundTint="#00FFFFFF" />
 
+    <Button
+        android:id="@+id/buttonPodkategoria3"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="196dp"
+        android:foreground="@drawable/przemoc_b"
+        android:text="Bójka"
+        app:backgroundTint="#00FFFFFF" />
 
     <Button
         android:id="@+id/buttonDalej"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="162dp"
-        android:layout_marginRight="162dp"
-        android:layout_marginBottom="104dp"
-        android:text="Dalej" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:foreground="@drawable/dalej"
+        android:text="Dalej"
+        app:backgroundTint="#00FFFFFF" />
 
     <TextView
         android:id="@+id/textViewKategoria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="140dp"
-        android:layout_marginRight="140dp"
-        android:layout_marginBottom="518dp"
+        android:layout_alignBottom="@+id/buttonDalej"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="486dp"
         android:text="Wybierz kategorię " />
 
     <TextView
         android:id="@+id/textViewPodkategoria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="123dp"
-        android:layout_marginRight="123dp"
-        android:layout_marginBottom="551dp"
+        android:layout_alignBottom="@+id/buttonDalej"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="449dp"
         android:text="Wybierz podkategorię" />
+
+    <Button
+        android:id="@+id/buttonPrzemocInne"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:foreground="@drawable/inne_przycisk"
+        android:text="Button"
+        app:backgroundTint="#00FFFFFF" />
 
 </RelativeLayout>
