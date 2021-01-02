@@ -1,0 +1,126 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.HelpApp"
+4    android:versionCode="1"
+5    android:versionName="v0.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml
+10
+11    <uses-feature
+11-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:5:5-7:35
+12        android:name="android.hardware.camera2"
+12-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:6:9-48
+13        android:required="true" />
+13-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:7:9-32
+14
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:9:5-80
+15-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:9:22-78
+16    <uses-permission
+16-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:11:5-13:38
+17        android:name="android.permission.ACCESS_COARSE_LOCATION"
+17-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:12:9-65
+18        android:maxSdkVersion="22" />
+18-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:13:9-35
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:14:5-79
+19-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:14:22-76
+20
+21    <application
+21-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:16:5-50:19
+22        android:allowBackup="true"
+22-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:18:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.3.1] C:\Users\WK\.gradle\caches\transforms-2\files-2.1\ff37b710ecf84191a2687617c776753e\core-1.3.1\AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:icon="@mipmap/ic_launcher"
+25-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:19:9-43
+26        android:label="SOS Warszawa"
+26-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:20:9-37
+27        android:requestLegacyExternalStorage="true"
+27-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:17:9-52
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:21:9-54
+29        android:supportsRtl="true"
+29-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:22:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.GUI" >
+31-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:23:9-41
+32        <activity android:name="com.example.HelpApp.szkodySummary" />
+32-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:24:9-60
+32-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:24:19-48
+33        <activity android:name="com.example.HelpApp.alarmPodkategorieInne" />
+33-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:25:9-59
+33-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:25:19-56
+34        <activity android:name="com.example.HelpApp.alarmPodkategoriePrzemoc" />
+34-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:26:9-62
+34-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:26:19-59
+35        <activity android:name="com.example.HelpApp.alarmPodkategoriePozar" />
+35-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:27:9-60
+35-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:27:19-57
+36        <activity android:name="com.example.HelpApp.alarmPodkategoriePomocMedyczna" />
+36-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:28:9-68
+36-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:28:19-65
+37        <activity android:name="com.example.HelpApp.szkodyPodkategoria" />
+37-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:29:9-56
+37-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:29:19-53
+38        <activity android:name="com.example.HelpApp.alarmComms" />
+38-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:30:9-48
+38-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:30:19-45
+39        <activity android:name="com.example.HelpApp.alarmStusus" />
+39-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:31:9-49
+39-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:31:19-46
+40        <activity android:name="com.example.HelpApp.alarmSummary" />
+40-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:32:9-50
+40-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:32:19-47
+41        <activity android:name="com.example.HelpApp.alarmCamera" />
+41-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:33:9-49
+41-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:33:19-46
+42        <activity android:name="com.example.HelpApp.alarmLokalizacja" />
+42-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:34:9-54
+42-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:34:19-51
+43        <activity android:name="com.example.HelpApp.alarmPodkategoria" />
+43-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:35:9-55
+43-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:35:19-52
+44        <activity android:name="com.example.HelpApp.quiz" />
+44-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:36:9-42
+44-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:36:19-39
+45        <activity android:name="com.example.HelpApp.bazawiedzy" />
+45-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:37:9-48
+45-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:37:19-45
+46        <activity android:name="com.example.HelpApp.infopandemia" />
+46-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:38:9-50
+46-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:38:19-47
+47        <activity android:name="com.example.HelpApp.wiedza" />
+47-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:39:9-44
+47-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:39:19-41
+48        <activity android:name="com.example.HelpApp.szkody" />
+48-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:40:9-44
+48-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:40:19-41
+49        <activity android:name="com.example.HelpApp.alarm" />
+49-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:41:9-43
+49-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:41:19-40
+50        <activity android:name="com.example.HelpApp.mail" />
+50-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:42:9-42
+50-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:42:19-39
+51        <activity android:name="com.example.HelpApp.MainActivity" >
+51-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:43:9-49:20
+51-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:43:19-47
+52            <intent-filter>
+52-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:44:13-48:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:45:17-69
+53-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:45:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:47:17-77
+55-->C:\Users\WK\Documents\SGSP\helpapp_git\helpapp-main\app\src\main\AndroidManifest.xml:47:27-74
+56            </intent-filter>
+57        </activity>
+58    </application>
+59
+60</manifest>

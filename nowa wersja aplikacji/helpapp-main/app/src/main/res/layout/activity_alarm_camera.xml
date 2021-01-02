@@ -43,6 +43,7 @@
         android:text="Nagraj krótki film z miejsca zdarzenia.\n\nPrzedstaw ratownikom, jak wygląda sytuacja" />
 
     <Button
+        android:id="@+id/buttonKameruje"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_above="@+id/buttonDalej"
@@ -51,7 +52,6 @@
         android:layout_marginTop="55dp"
         android:layout_marginBottom="86dp"
         android:foreground="@drawable/kamerka"
-        android:onClick="CaptureVideo"
         android:text="Rozpocznij nagrywanie"
         app:backgroundTint="#00FFFFFF" />
 
