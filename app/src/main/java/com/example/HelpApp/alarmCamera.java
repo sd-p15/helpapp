@@ -56,6 +56,7 @@ public class alarmCamera extends AppCompatActivity {
             }
         });
 
+
         Button dalej = (Button) findViewById(R.id.buttonDalej);
 
         dalej.setOnClickListener(new View.OnClickListener() {
@@ -64,6 +65,7 @@ public class alarmCamera extends AppCompatActivity {
                 openComms();
             }
         });
+
 
     }
 

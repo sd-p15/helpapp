@@ -42,7 +42,6 @@
         android:text="Wypadek Kolejowy"
         app:backgroundTint="#00FFFFFF" />
 
-
     <TextView
         android:id="@+id/textViewKategoria"
         android:layout_width="wrap_content"

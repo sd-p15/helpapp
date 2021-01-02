@@ -39,5 +39,4 @@
         android:hint="Tutaj wpisz krótki opis zdarzenia..."
         android:importantForAutofill="no"
         android:inputType="textMultiLine" />
-
 </RelativeLayout>

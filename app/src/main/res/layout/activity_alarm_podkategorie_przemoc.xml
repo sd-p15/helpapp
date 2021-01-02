@@ -51,7 +51,6 @@
         android:text="Bójka"
         app:backgroundTint="#00FFFFFF" />
 
-
     <Button
         android:id="@+id/buttonDalej"
         android:layout_width="wrap_content"
