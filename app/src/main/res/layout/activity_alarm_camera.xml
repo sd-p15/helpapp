@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".alarmCamera">
 
-
     // tworzenie i ustawienie przycisk Play Video
-
     <Button
         android:id="@+id/buttonDalej"
         android:layout_width="wrap_content"
