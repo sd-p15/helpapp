@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,13 +33,14 @@ public class alarm extends AppCompatActivity {
         Button kategoria2 = (Button) findViewById(R.id.buttonKategoria2);
         Button kategoria3 = (Button) findViewById(R.id.buttonKategoria3);
         Button kategoria4 = (Button) findViewById(R.id.buttonKategoria4);
+        Button kategoria5 = (Button) findViewById(R.id.buttonKategoria5);
         Button dalej = (Button) findViewById(R.id.buttonDalej);
         TextView text = (TextView) findViewById(R.id.textViewKategoria);
 
         kategoria1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                alarmKategoria = "Kategoria1";
+                alarmKategoria = "Wypadek";
                 text.setText("Kategoria: " + alarmKategoria);
             }
         });
@@ -46,7 +48,7 @@ public class alarm extends AppCompatActivity {
         kategoria2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                alarmKategoria = "Kategoria2";
+                alarmKategoria = "Pomoc Medyczna";
                 text.setText("Kategoria: " + alarmKategoria);
             }
         });
@@ -54,7 +56,7 @@ public class alarm extends AppCompatActivity {
         kategoria3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                alarmKategoria = "Kategoria3";
+                alarmKategoria = "Pożar";
                 text.setText("Kategoria: " + alarmKategoria);
             }
         });
@@ -62,7 +64,14 @@ public class alarm extends AppCompatActivity {
         kategoria4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                alarmKategoria = "Kategoria4";
+                alarmKategoria = "Przemoc, Przestępczość";
+                text.setText("Kategoria: " + alarmKategoria);
+            }
+        });
+        kategoria5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alarmKategoria = "Inne";
                 text.setText("Kategoria: " + alarmKategoria);
             }
         });
@@ -70,8 +79,30 @@ public class alarm extends AppCompatActivity {
         dalej.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                writeToCSV();
-                openPodkategorie();
+                if(alarmKategoria!=null) {
+                    switch (alarmKategoria){
+                        case "Wypadek":
+                            openPodkategorie();
+                            break;
+                        case "Pomoc Medyczna":
+                            openPodkategoriePomoc();
+                            break;
+                        case "Pożar":
+                            openPodkategoriePozar();
+                            break;
+                        case "Przemoc, Przestępczość":
+                            openPodkategoriePrzemoc();
+                            break;
+                        case "Inne":
+                            openPodkategorieInne();
+                            break;
+
+                    }
+
+                }else {
+                    Toast.makeText(getApplicationContext(),"Wybierz kategorię", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
     }
@@ -130,6 +161,30 @@ public class alarm extends AppCompatActivity {
     public void openPodkategorie() {
         String text=alarmKategoria;
         Intent intent = new Intent(this, alarmPodkategoria.class);
+        intent.putExtra(KATEGORIA,text);
+        startActivity(intent);
+    };
+    public void openPodkategoriePomoc() {
+        String text=alarmKategoria;
+        Intent intent = new Intent(this, alarmPodkategoriePomocMedyczna.class);
+        intent.putExtra(KATEGORIA,text);
+        startActivity(intent);
+    };
+    public void openPodkategoriePozar() {
+        String text=alarmKategoria;
+        Intent intent = new Intent(this, alarmPodkategoriePozar.class);
+        intent.putExtra(KATEGORIA,text);
+        startActivity(intent);
+    };
+    public void openPodkategoriePrzemoc() {
+        String text=alarmKategoria;
+        Intent intent = new Intent(this, alarmPodkategoriePrzemoc.class);
+        intent.putExtra(KATEGORIA,text);
+        startActivity(intent);
+    };
+    public void openPodkategorieInne() {
+        String text=alarmKategoria;
+        Intent intent = new Intent(this, alarmPodkategorieInne.class);
         intent.putExtra(KATEGORIA,text);
         startActivity(intent);
     };

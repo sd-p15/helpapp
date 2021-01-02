@@ -18,6 +18,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,6 +40,17 @@ import java.util.List;
 import java.util.Locale;
 
 public class alarmLokalizacja extends AppCompatActivity {
+    String Podkategoria;
+    String kategoria;
+    String lokalizacjaUlica;
+    String lokalizacjaLatitude;
+    String lokalizacjaLongtitude;
+
+    public static final String LOKALIZACJA_ULICA ="Alarm.lokalizacjaUlica";
+    public static final String LOKALIZACJA_LONG ="Alarm.lokalizacjaLong";
+    public static final String LOKALIZACJA_LAT ="Alarm.lokalizacjaLat";
+    public static final String PODKATEGORIA ="Alarm.lokalizacjaPodkategoria";
+    public static final String KATEGORIA ="Alarm.lokalizacjaKategoria";
 
     //umożliwienie edycji tekstu
     EditText  address;    //-WK-
@@ -68,7 +80,32 @@ public class alarmLokalizacja extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm_lokalizacja);
 
+        Intent intent = getIntent();
+        kategoria = intent.getStringExtra(alarm.KATEGORIA);
+        switch (kategoria){
+            case "Wypadek":
+                    Podkategoria=intent.getStringExtra(alarmPodkategoria.PODKATEGORIA);
+                break;
+            case "Pomoc Medyczna":
+                Podkategoria=intent.getStringExtra(alarmPodkategoriePomocMedyczna.PODKATEGORIA);
+                break;
+            case "Pożar":
+                Podkategoria=intent.getStringExtra(alarmPodkategoriePozar.PODKATEGORIA);
+                break;
+            case "Przemoc, Przestępczość":
+                Podkategoria=intent.getStringExtra(alarmPodkategoriePrzemoc.PODKATEGORIA);
+                break;
+            case "Inne":
+                Podkategoria=intent.getStringExtra(alarmPodkategorieInne.PODKATEGORIA);
+                break;
+
+        }
+
         Button dalej =(Button) findViewById(R.id.buttonDalej);
+        TextView kategoriaText = (TextView) findViewById(R.id.textViewKategoria) ;
+        TextView podkategoriaText = (TextView) findViewById(R.id.textViewPodkategoria) ;
+        kategoriaText.setText("Kategoria:" + kategoria);
+        podkategoriaText.setText("Podkategoria : " + Podkategoria);
 
         //Zainicjowanie zmiennych
 
@@ -118,6 +155,9 @@ public class alarmLokalizacja extends AppCompatActivity {
         dalej.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                lokalizacjaUlica=address.getText().toString();
+                lokalizacjaLatitude=latitude.getText().toString();
+                lokalizacjaLongtitude=longitude.getText().toString();
                 openCamera();
             }
         });
@@ -241,6 +281,11 @@ public class alarmLokalizacja extends AppCompatActivity {
 
     public void openCamera() {
         Intent intent = new Intent(this, alarmCamera.class);
+        intent.putExtra(LOKALIZACJA_ULICA,lokalizacjaUlica);
+        intent.putExtra(LOKALIZACJA_LONG,lokalizacjaLongtitude);
+        intent.putExtra(LOKALIZACJA_LAT,lokalizacjaLatitude);
+        intent.putExtra(PODKATEGORIA,Podkategoria);
+        intent.putExtra(KATEGORIA,kategoria);
         startActivity(intent);
     };
 

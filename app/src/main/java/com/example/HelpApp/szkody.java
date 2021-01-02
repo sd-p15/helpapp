@@ -3,10 +3,22 @@ package com.example.HelpApp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.view.View;
+import android.os.Build;
 import android.os.Bundle;
-import android.widget.Button;
+import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Button;
+import android.widget.TextView;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
 
 public class szkody extends AppCompatActivity {
     private Button button2;
@@ -21,11 +33,17 @@ public class szkody extends AppCompatActivity {
     ImageButton imageButton9;
     ImageButton imageButton10;
     ImageButton imageButton11;
+    String szkodyKategoria;
+    public static final String KATEGORIA ="Szkody.kategoria";
+    public szkody() throws FileNotFoundException {
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_szkody);
+
         imageButton = (ImageButton) findViewById(R.id.buttonDrogi);
         imageButton2 = (ImageButton) findViewById(R.id.buttonKomunikacja);
         imageButton3 = (ImageButton) findViewById(R.id.buttonLokalowe);
@@ -37,123 +55,100 @@ public class szkody extends AppCompatActivity {
         imageButton9 = (ImageButton) findViewById(R.id.buttonZwierzeta);
         imageButton10 = (ImageButton) findViewById(R.id.buttonPorzadek);
         imageButton11 = (ImageButton) findViewById(R.id.buttonInne);
+        TextView text = (TextView) findViewById(R.id.textView2);
+        Button dalej = (Button) findViewById(R.id.buttonDalej1);
 
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDrogi();
-
+                szkodyKategoria= "Drogi";
+                text.setText("Kategoria: " + szkodyKategoria);
             }
         });
         imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openKomunikacja();
+                szkodyKategoria= "Komunikacja";
+                text.setText("Kategoria: " + szkodyKategoria);
             }
         });
         imageButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openLokalowe();
+                szkodyKategoria= "Lokalowe";
+                text.setText("Kategoria: " + szkodyKategoria);
             }
         });
         imageButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openOdsniezanie();
+                szkodyKategoria= "Odśnieżanie";
+                text.setText("Kategoria: " + szkodyKategoria);
             }
         });
         imageButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openSmieci();
+                szkodyKategoria= "Śmieci";
+                text.setText("Kategoria: " + szkodyKategoria);
             }
         });
         imageButton6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDewastacja();
+                szkodyKategoria= "Dewastacja";
+                text.setText("Kategoria: " + szkodyKategoria);
             }
         });
         imageButton7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openKanalizacyjne();
+                szkodyKategoria= "Kanalizacyjne";
+                text.setText("Kategoria: " + szkodyKategoria);
 
             }
         });
         imageButton8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openZielen();
-
+                szkodyKategoria= "Zieleń";
+                text.setText("Kategoria: " + szkodyKategoria);
             }
         });
         imageButton9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openZwierzeta();
-
+                szkodyKategoria = "Zwierzęta";
+                text.setText("Kategoria: " + szkodyKategoria);
             }
         });
         imageButton10.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPorzadek();
-
+                @Override
+                public void onClick(View v) {
+                    szkodyKategoria= "Porządek";
+                    text.setText("Kategoria: " + szkodyKategoria);
             }
         });
         imageButton11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openInne();
+                szkodyKategoria= "Inne";
+                text.setText("Kategoria: " + szkodyKategoria);
             }
         });
+        dalej.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPodkategorie1();
 
-    }
-    public void openDrogi() {
-        Intent intent = new Intent(this, drogi.class);
-        startActivity(intent);
-    }
-    public void openKomunikacja() {
-        Intent intent = new Intent(this, komunikacja.class);
-        startActivity(intent);
-    }
-    public void openLokalowe() {
-        Intent intent = new Intent(this, lokalowe.class);
-        startActivity(intent);
-    }
-    public void openOdsniezanie() {
-        Intent intent = new Intent(this, odsniezanie.class);
-        startActivity(intent);
-    }
-    public void openSmieci() {
-        Intent intent = new Intent(this, smieci.class);
-        startActivity(intent);
-    }
-    public void openDewastacja() {
-        Intent intent = new Intent(this, dewastacja.class);
-        startActivity(intent);
-    }
-    public void openKanalizacyjne() {
-        Intent intent = new Intent(this, kanalizacyjne.class);
-        startActivity(intent);
-    }
-    public void openZielen() {
-        Intent intent = new Intent(this, zielen.class);
-        startActivity(intent);
-    }
-    public void openZwierzeta() {
-        Intent intent = new Intent(this, zwierzeta.class);
-        startActivity(intent);
-    }
-    public void openPorzadek() {
-        Intent intent = new Intent(this, porzadek.class);
-        startActivity(intent);
-    }
-    public void openInne() {
-        Intent intent = new Intent(this, inne.class);
-        startActivity(intent);
+            }
+        });
     }
 
-}
+            public void openPodkategorie1() {
+                String text = szkodyKategoria;
+                Intent intent = new Intent(this, szkodyPodkategoria.class);
+                intent.putExtra(KATEGORIA, text);
+                startActivity(intent);
+            }
+        };

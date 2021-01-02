@@ -6,18 +6,27 @@
         android:name="android.hardware.camera2"
         android:required="true" />
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <uses-permission
         android:name="android.permission.ACCESS_COARSE_LOCATION"
         android:maxSdkVersion="22" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
+        android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="SOS Warszawa"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GUI">
+        <activity android:name=".szkodySummary"></activity>
+        <activity android:name=".alarmPodkategorieInne" />
+        <activity android:name=".alarmPodkategoriePrzemoc" />
+        <activity android:name=".alarmPodkategoriePozar" />
+        <activity android:name=".alarmPodkategoriePomocMedyczna" />
+        <activity android:name=".szkodyPodkategoria" />
         <activity android:name=".alarmComms" />
         <activity android:name=".alarmStusus" />
         <activity android:name=".alarmSummary" />
@@ -27,17 +36,6 @@
         <activity android:name=".quiz" />
         <activity android:name=".bazawiedzy" />
         <activity android:name=".infopandemia" />
-        <activity android:name=".smieci" />
-        <activity android:name=".inne" />
-        <activity android:name=".porzadek" />
-        <activity android:name=".zwierzeta" />
-        <activity android:name=".zielen" />
-        <activity android:name=".kanalizacyjne" />
-        <activity android:name=".dewastacja" />
-        <activity android:name=".odsniezanie" />
-        <activity android:name=".lokalowe" />
-        <activity android:name=".komunikacja" />
-        <activity android:name=".drogi" />
         <activity android:name=".wiedza" />
         <activity android:name=".szkody" />
         <activity android:name=".alarm" />

@@ -6,76 +6,179 @@
     android:layout_height="match_parent"
     tools:context=".alarm">
 
-    <Button
-        android:id="@+id/buttonKategoria1"
-        android:layout_width="178dp"
-        android:layout_height="66dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="217dp"
-        android:layout_marginRight="217dp"
-        android:layout_marginBottom="435dp"
-        android:text="Kategoria1" />
-
-    <Button
-        android:id="@+id/buttonKategoria2"
-        android:layout_width="142dp"
-        android:layout_height="78dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:layout_marginBottom="420dp"
-        android:text="Kategoria2" />
 
     <Button
         android:id="@+id/buttonKategoria3"
-        android:layout_width="170dp"
-        android:layout_height="87dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="218dp"
-        android:layout_marginRight="218dp"
-        android:layout_marginBottom="282dp"
-        android:text="Kategoria3" />
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginBottom="441dp"
+        android:foreground="@drawable/poar"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:shadowColor="#00FFFFFF"
+        android:text="Pożar"
+        android:visibility="visible"
+        app:backgroundTint="#00FFFFFF"
+        app:iconTint="#00FFFFFF" />
 
     <Button
-        android:id="@+id/buttonKategoria4"
-        android:layout_width="155dp"
-        android:layout_height="104dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:layout_marginBottom="279dp"
-        android:text="Kategoria4" />
+        android:id="@+id/buttonKategoria1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
 
-
-    <Button
-        android:id="@+id/buttonDalej"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="162dp"
-        android:layout_marginRight="162dp"
-        android:layout_marginBottom="104dp"
-        android:text="Dalej" />
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginBottom="307dp"
+        android:foreground="@drawable/wypadki"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Wypadek"
+        android:visibility="visible"
+        app:backgroundTint="#00FFFFFF"
+        app:iconTint="#00FFFFFF"
+        app:strokeColor="#00FFFFFF" />
 
     <TextView
         android:id="@+id/textViewKategoria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="570dp"
+        android:text="Wybierz kategorię "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/wypadek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonKategoria1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="108dp"
+        android:background="#00FFFFFF"
+        android:text="Wypadek" />
+
+    <TextView
+        android:id="@+id/przemoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonKategoria4"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="140dp"
-        android:layout_marginRight="140dp"
-        android:layout_marginBottom="518dp"
-        android:text="Wybierz kategorię " />
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginBottom="279dp"
+        android:background="#00FFFFFF"
+        android:text="Przestępczość" />
+
+    <Button
+        android:id="@+id/buttonKategoria2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="440dp"
+        android:foreground="@drawable/pomoc_medyczna"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Pomoc Medyczna"
+        android:visibility="visible"
+        app:backgroundTint="#00FFFFFF"
+        app:iconTint="#00FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonKategoria4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="304dp"
+        android:foreground="@drawable/przestpczo__pomoc"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Przemoc, Przestępczość"
+        app:backgroundTint="#00FFFFFF"
+        app:iconTint="#00FFFFFF" />
+
+    <TextView
+        android:id="@+id/pomocmedyczna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonKategoria2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:background="#00FFFFFF"
+        android:text="Pomoc Medyczna" />
+
+    <TextView
+        android:id="@+id/inne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonKategoria5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:text="Inne"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonKategoria5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        android:foreground="@drawable/inne"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Inne"
+        android:visibility="visible"
+        app:backgroundTint="#00FFFFFF"
+        app:iconTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonDalej"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:foreground="@drawable/dalej"
+        android:text="Dalej"
+        app:backgroundTint="#2196F3" />
+
+    <TextView
+        android:id="@+id/pozar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonKategoria3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="108dp"
+        android:background="#00FFFFFF"
+        android:text="Pożar"
+        android:visibility="visible" />
+
 </RelativeLayout>

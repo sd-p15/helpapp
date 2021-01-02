@@ -6,89 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".alarmPodkategoria">
 
-    <Button
-        android:id="@+id/buttonPodkategoria1"
-        android:layout_width="178dp"
-        android:layout_height="66dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="217dp"
-        android:layout_marginRight="217dp"
-        android:layout_marginBottom="435dp"
-        android:text="Podkategoria1" />
 
     <Button
-        android:id="@+id/buttonPodkategoria2"
-        android:layout_width="142dp"
-        android:layout_height="78dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:layout_marginBottom="420dp"
-        android:text="Podkategoria2" />
+        android:id="@+id/buttonPodkategoria1"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/buttonPodkategoria2"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="25dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/wypadki_d"
+        android:text="Wypadek Drogowy"
+        app:backgroundTint="#00FFFFFF" />
 
     <Button
         android:id="@+id/buttonPodkategoria3"
-        android:layout_width="170dp"
-        android:layout_height="87dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="218dp"
-        android:layout_marginRight="218dp"
-        android:layout_marginBottom="282dp"
-        android:text="Podkategoria3" />
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/buttonDalej"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:foreground="@drawable/wypadki_w"
+        android:text="Wypadek Wodny"
+        app:backgroundTint="#00FFFFFF" />
 
     <Button
-        android:id="@+id/buttonPodkategoria4"
-        android:layout_width="155dp"
-        android:layout_height="104dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:layout_marginBottom="279dp"
-        android:text="Podkategoria4" />
-
-
-    <Button
-        android:id="@+id/buttonDalej"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="162dp"
-        android:layout_marginRight="162dp"
-        android:layout_marginBottom="104dp"
-        android:text="Dalej" />
+        android:id="@+id/buttonPodkategoria2"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/buttonPodkategoria3"
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:foreground="@drawable/wypadki_k"
+        android:text="Wypadek Kolejowy"
+        app:backgroundTint="#00FFFFFF" />
 
     <TextView
         android:id="@+id/textViewKategoria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="140dp"
-        android:layout_marginRight="140dp"
-        android:layout_marginBottom="518dp"
+        android:layout_alignBottom="@+id/buttonDalej"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="486dp"
         android:text="Wybierz kategorię " />
 
     <TextView
         android:id="@+id/textViewPodkategoria"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonDalej"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="451dp"
+        android:text="Wpisz podkategorię" />
+
+    <Button
+        android:id="@+id/buttonDalej"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="123dp"
-        android:layout_marginRight="123dp"
-        android:layout_marginBottom="551dp"
-        android:text="Wybierz podkategorię" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:foreground="@drawable/dalej"
+        android:text="Dalej" />
+
 
 </RelativeLayout>
