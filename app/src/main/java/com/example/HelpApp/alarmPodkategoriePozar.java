@@ -27,6 +27,7 @@ public class alarmPodkategoriePozar extends AppCompatActivity {
         Button podkategoria1 = (Button) findViewById(R.id.buttonPodkategoria1);
         Button podkategoria2 = (Button) findViewById(R.id.buttonPodkategoria2);
         Button podkategoria3 = (Button) findViewById(R.id.buttonPodkategoria3);
+        Button podkategoria4 = (Button) findViewById(R.id.buttonPozarInne);
         Button dalej = (Button) findViewById(R.id.buttonDalej);
         TextView text = (TextView) findViewById(R.id.textViewPodkategoria);
         TextView textKategoria = (TextView) findViewById(R.id.textViewKategoria);
@@ -55,7 +56,13 @@ public class alarmPodkategoriePozar extends AppCompatActivity {
                 text.setText("Podkategoria: " + alarmPodkategoria);
             }
         });
-
+        podkategoria4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alarmPodkategoria = "Inne";
+                text.setText("Podkategoria: " + alarmPodkategoria);
+            }
+        });
 
         dalej.setOnClickListener(new View.OnClickListener() {
             @Override

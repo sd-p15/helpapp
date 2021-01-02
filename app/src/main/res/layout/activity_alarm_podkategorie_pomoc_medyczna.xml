@@ -4,115 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#002196F3"
     tools:context=".alarmPodkategoriePomocMedyczna">
 
-    <Button
-        android:id="@+id/buttonPodkategoria1"
-        android:layout_width="178dp"
-        android:layout_height="66dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="203dp"
-        android:layout_marginRight="203dp"
-        android:layout_marginBottom="431dp"
-        android:text="Zasłabnięcie" />
-
-    <Button
-        android:id="@+id/buttonPodkategoria2"
-        android:layout_width="142dp"
-        android:layout_height="78dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:layout_marginBottom="427dp"
-        android:text="Atak drgawek" />
-
-    <Button
-        android:id="@+id/buttonPodkategoria3"
-        android:layout_width="170dp"
-        android:layout_height="87dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="212dp"
-        android:layout_marginRight="212dp"
-        android:layout_marginBottom="295dp"
-        android:text="Tonięcie" />
-
-
-    <Button
-        android:id="@+id/buttonPodkategoria4"
-        android:layout_width="155dp"
-        android:layout_height="104dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="18dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginBottom="300dp"
-        android:text="Złamanie" />
-
-    <Button
-        android:id="@+id/buttonPodkategoria5"
-        android:layout_width="155dp"
-        android:layout_height="104dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="29dp"
-        android:layout_marginRight="29dp"
-        android:layout_marginBottom="170dp"
-        android:text="Krwotok" />
-
-    <Button
-        android:id="@+id/buttonPodkategoria6"
-        android:layout_width="155dp"
-        android:layout_height="104dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="237dp"
-        android:layout_marginRight="237dp"
-        android:layout_marginBottom="165dp"
-        android:text="Zatrucie" />
 
     <Button
         android:id="@+id/buttonDalej"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="162dp"
-        android:layout_marginRight="162dp"
-        android:layout_marginBottom="104dp"
-        android:text="Dalej" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:foreground="@drawable/dalej"
+        android:text="Dalej"
+        app:backgroundTint="#2196F3" />
+
+    <Button
+        android:id="@+id/buttonPodkategoria5"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="221dp"
+        android:foreground="@drawable/pomoc_medyczna_krwo"
+        android:text="Krwotok"
+        app:backgroundTint="#00FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonPodkategoria1"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="490dp"
+        android:foreground="@drawable/pomoc_medyczna_zasabnicie"
+        android:text="Zasłabnięcie"
+        app:backgroundTint="#00FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonPodkategoria2"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="422dp"
+        android:foreground="@drawable/pomoc_medyczna_atak"
+        android:text="Atak drgawek"
+        app:backgroundTint="#00FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonPodkategoria3"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="354dp"
+        android:foreground="@drawable/pomoc_medyczna_ton"
+        android:text="Tonięcie"
+        app:backgroundTint="#00FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonPodkategoria6"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="287dp"
+        android:foreground="@drawable/pomoc_medyczna_zatr"
+        android:text="Zatrucie"
+        app:backgroundTint="#00FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonPodkategoria4"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="155dp"
+        android:foreground="@drawable/pomoc_medyczna_za"
+        android:text="Złamanie"
+        app:backgroundTint="#00FFFFFF" />
 
     <TextView
         android:id="@+id/textViewKategoria"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="140dp"
-        android:layout_marginRight="140dp"
-        android:layout_marginBottom="518dp"
+        android:layout_height="29dp"
+        android:layout_alignBottom="@+id/buttonDalej"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="544dp"
         android:text="Wybierz kategorię " />
 
     <TextView
         android:id="@+id/textViewPodkategoria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="123dp"
-        android:layout_marginRight="123dp"
-        android:layout_marginBottom="551dp"
+        android:layout_alignBottom="@+id/buttonDalej"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="522dp"
         android:text="Wybierz podkategorię" />
+
+    <Button
+        android:id="@+id/buttonPodkategoria7"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:foreground="@drawable/inne_przycisk"
+        android:text="inneButton"
+        app:backgroundTint="#00FFFFFF" />
 
 </RelativeLayout>

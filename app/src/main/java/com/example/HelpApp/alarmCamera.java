@@ -47,6 +47,15 @@ public class alarmCamera extends AppCompatActivity {
         lokalizacjaLongtitude =intent.getStringExtra(alarmLokalizacja.LOKALIZACJA_LONG);
         lokalizacjaUlica =intent.getStringExtra(alarmLokalizacja.LOKALIZACJA_ULICA);
 
+        Button kameruje = (Button)  findViewById(R.id.buttonKameruje);
+
+        kameruje.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CaptureVideo(v);
+            }
+        });
+
         Button dalej = (Button) findViewById(R.id.buttonDalej);
 
         dalej.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +64,7 @@ public class alarmCamera extends AppCompatActivity {
                 openComms();
             }
         });
+
     }
 
     public void CaptureVideo(View view) {
