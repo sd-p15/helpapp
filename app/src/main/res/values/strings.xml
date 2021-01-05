@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">HelpApp</string>
+    <string name="app_name">SOS Warszawa</string>
     <string name="title_activity_smieci">smieci</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="start">Start</string>
+    <string name="profil">Mój profil</string>
+    <string name="ustawienia">Ustawienia</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 

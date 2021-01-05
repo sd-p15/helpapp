@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.HelpApp">
 
     <uses-feature
         android:name="android.hardware.camera2"
         android:required="true" />
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
 
     <uses-permission
         android:name="android.permission.ACCESS_COARSE_LOCATION"
@@ -16,11 +18,11 @@
     <application
         android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_ikona"
         android:label="SOS Warszawa"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_ikona_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GUI">
+        android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".szkodySummary"/>
         <activity android:name=".alarmPodkategorieInne" />
         <activity android:name=".alarmPodkategoriePrzemoc" />

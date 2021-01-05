@@ -8,11 +8,21 @@ import androidx.core.app.ActivityCompat;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.media.Image;
 import android.os.Environment;
+import android.text.Html;
 import android.view.View;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
+import android.widget.Toolbar;
+
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.bottomnavigation.BottomNavigationMenu;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -22,20 +32,20 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
     //elementy GUI
-    Button button;
-    Button button2;
-    Button button3;
+    ImageButton button;
+    ImageButton button2;
+    ImageButton button3;
     //deklaracja zmiennych tworzenia repozytorium
-
+    private Toolbar topAppBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //przypisanie GUI
-        button = (Button) findViewById(R.id.buttonAlarm);
-        button2 = (Button) findViewById(R.id.buttonSzkody);
-        button3 = (Button) findViewById(R.id.buttonWiedza);
+        button = (ImageButton) findViewById(R.id.buttonAlarm);
+        button2 = (ImageButton) findViewById(R.id.buttonSzkody);
+        button3 = (ImageButton) findViewById(R.id.buttonWiedza);
         // słuchacze przycisków
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +79,11 @@ public class MainActivity extends AppCompatActivity {
                     , new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}
                     , 100);
         }
+
+        //top bar
+        //bottom bar
+
+
 
     }
     //komendy otwierania nowych stron
@@ -208,6 +223,9 @@ public class MainActivity extends AppCompatActivity {
                 builder.show();
             }
         }
+
+
+
     }
 
 
