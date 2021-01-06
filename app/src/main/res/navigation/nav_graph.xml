@@ -3,46 +3,192 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
-
-    <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.HelpApp."
-        android:label="foo0"
-        tools:layout="@layout/fragment_first">
-
+    app:startDestination="@id/mainActivity2">
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.HelpApp.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.HelpApp.SecondFragment"
-        android:label="foo1"
-        tools:layout="@layout/fragment_second">
-
+            android:id="@+id/action_mainActivity2_to_alarm2"
+            app:destination="@id/alarm2" />
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/First2Fragment"
-        android:name="com.example.HelpApp.First2Fragment"
-        android:label="foo2"
-        tools:layout="@layout/fragment_first2">
-
+            android:id="@+id/action_mainActivity2_to_wiedza"
+            app:destination="@id/wiedza" />
         <action
-            android:id="@+id/action_First2Fragment_to_Second2Fragment"
-            app:destination="@id/Second2Fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/Second2Fragment"
-        android:name="com.example.HelpApp.Second2Fragment"
-        android:label="foo3"
-        tools:layout="@layout/fragment_second2">
-
+            android:id="@+id/action_mainActivity2_to_szkody"
+            app:destination="@id/szkody" />
+    </activity>
+    <activity
+        android:id="@+id/alarm2"
+        android:name="com.example.HelpApp.alarm"
+        android:label="activity_alarm"
+        tools:layout="@layout/activity_alarm" >
         <action
-            android:id="@+id/action_Second2Fragment_to_First2Fragment"
-            app:destination="@id/First2Fragment" />
-    </fragment>
+            android:id="@+id/action_alarm2_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
+        <action
+            android:id="@+id/action_alarm2_to_alarmPodkategoria"
+            app:destination="@id/alarmPodkategoria" />
+        <action
+            android:id="@+id/action_alarm2_to_alarmPodkategoriePomocMedyczna"
+            app:destination="@id/alarmPodkategoriePomocMedyczna" />
+        <action
+            android:id="@+id/action_alarm2_to_alarmPodkategorieInne"
+            app:destination="@id/alarmPodkategorieInne" />
+        <action
+            android:id="@+id/action_alarm2_to_alarmPodkategoriePozar"
+            app:destination="@id/alarmPodkategoriePozar" />
+        <action
+            android:id="@+id/action_alarm2_to_alarmPodkategoriePrzemoc"
+            app:destination="@id/alarmPodkategoriePrzemoc" />
+    </activity>
+    <activity
+        android:id="@+id/wiedza"
+        android:name="com.example.HelpApp.wiedza"
+        android:label="activity_wiedza"
+        tools:layout="@layout/activity_wiedza" >
+        <action
+            android:id="@+id/action_wiedza_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
+        <action
+            android:id="@+id/action_wiedza_to_bazawiedzy"
+            app:destination="@id/bazawiedzy" />
+    </activity>
+    <activity
+        android:id="@+id/szkody"
+        android:name="com.example.HelpApp.szkody"
+        android:label="activity_szkody"
+        tools:layout="@layout/activity_szkody" >
+        <action
+            android:id="@+id/action_szkody_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
+        <action
+            android:id="@+id/action_szkody_to_szkodyPodkategoria"
+            app:destination="@id/szkodyPodkategoria" />
+    </activity>
+    <activity
+        android:id="@+id/bazawiedzy"
+        android:name="com.example.HelpApp.bazawiedzy"
+        android:label="bazawiedzy" >
+        <action
+            android:id="@+id/action_bazawiedzy_to_wiedza"
+            app:destination="@id/wiedza" />
+        <action
+            android:id="@+id/action_bazawiedzy_to_ciekawostka"
+            app:destination="@id/ciekawostka" />
+    </activity>
+    <activity
+        android:id="@+id/ciekawostka"
+        android:name="com.example.HelpApp.ciekawostka"
+        android:label="ciekawostka" >
+        <action
+            android:id="@+id/action_ciekawostka_to_bazawiedzy"
+            app:destination="@id/bazawiedzy" />
+    </activity>
+    <navigation
+        android:id="@+id/zgloszenie"
+        app:startDestination="@id/alarmLokalizacja">
+        <activity
+            android:id="@+id/alarmLokalizacja"
+            android:name="com.example.HelpApp.alarmLokalizacja"
+            android:label="activity_alarm_lokalizacja"
+            tools:layout="@layout/activity_alarm_lokalizacja">
+            <action
+                android:id="@+id/action_alarmLokalizacja_to_alarmCamera"
+                app:destination="@id/alarmCamera" />
+        </activity>
+        <activity
+            android:id="@+id/alarmCamera"
+            android:name="com.example.HelpApp.alarmCamera"
+            android:label="activity_alarm_camera"
+            tools:layout="@layout/activity_alarm_camera">
+            <action
+                android:id="@+id/action_alarmCamera_to_alarmComms"
+                app:destination="@id/alarmComms" />
+        </activity>
+        <activity
+            android:id="@+id/alarmSummary"
+            android:name="com.example.HelpApp.alarmSummary"
+            android:label="activity_alarm_summary"
+            tools:layout="@layout/activity_alarm_summary">
+            <action
+                android:id="@+id/action_alarmSummary_to_alarmStusus"
+                app:destination="@id/alarmStusus" />
+        </activity>
+        <activity
+            android:id="@+id/alarmComms"
+            android:name="com.example.HelpApp.alarmComms"
+            android:label="activity_alarm_comms"
+            tools:layout="@layout/activity_alarm_comms">
+            <action
+                android:id="@+id/action_alarmComms_to_alarmSummary"
+                app:destination="@id/alarmSummary" />
+        </activity>
+        <activity
+            android:id="@+id/alarmStusus"
+            android:name="com.example.HelpApp.alarmStusus"
+            android:label="activity_alarm_stusus"
+            tools:layout="@layout/activity_alarm_stusus" />
+        <action
+            android:id="@+id/action_global_szkodyPodkategoria"
+            app:destination="@id/szkodyPodkategoria" />
+    </navigation>
+    <activity
+        android:id="@+id/alarmPodkategoriePomocMedyczna"
+        android:name="com.example.HelpApp.alarmPodkategoriePomocMedyczna"
+        android:label="activity_alarm_podkategorie_pomoc_medyczna"
+        tools:layout="@layout/activity_alarm_podkategorie_pomoc_medyczna" >
+        <action
+            android:id="@+id/action_alarmPodkategoriePomocMedyczna_to_zgloszenie"
+            app:destination="@id/zgloszenie" />
+    </activity>
+    <activity
+        android:id="@+id/alarmPodkategorieInne"
+        android:name="com.example.HelpApp.alarmPodkategorieInne"
+        android:label="activity_alarm_podkategorie_inne"
+        tools:layout="@layout/activity_alarm_podkategorie_inne" >
+        <action
+            android:id="@+id/action_alarmPodkategorieInne_to_zgloszenie"
+            app:destination="@id/zgloszenie" />
+    </activity>
+    <activity
+        android:id="@+id/alarmPodkategoriePrzemoc"
+        android:name="com.example.HelpApp.alarmPodkategoriePrzemoc"
+        android:label="activity_alarm_podkategorie_przemoc"
+        tools:layout="@layout/activity_alarm_podkategorie_przemoc" >
+        <action
+            android:id="@+id/action_alarmPodkategoriePrzemoc_to_zgloszenie"
+            app:destination="@id/zgloszenie" />
+    </activity>
+    <activity
+        android:id="@+id/alarmPodkategoriePozar"
+        android:name="com.example.HelpApp.alarmPodkategoriePozar"
+        android:label="activity_alarm_podkategorie_pozar"
+        tools:layout="@layout/activity_alarm_podkategorie_pozar" >
+        <action
+            android:id="@+id/action_alarmPodkategoriePozar_to_zgloszenie"
+            app:destination="@id/zgloszenie" />
+    </activity>
+    <activity
+        android:id="@+id/szkodyPodkategoria"
+        android:name="com.example.HelpApp.szkodyPodkategoria"
+        android:label="activity_szkody_podkategoria"
+        tools:layout="@layout/activity_szkody_podkategoria" >
+        <action
+            android:id="@+id/action_szkodyPodkategoria_to_szkody"
+            app:destination="@id/szkody" />
+        <action
+            android:id="@+id/action_szkodyPodkategoria_to_zgloszenie"
+            app:destination="@id/zgloszenie" />
+    </activity>
+    <activity
+        android:id="@+id/alarmPodkategoria"
+        android:name="com.example.HelpApp.alarmPodkategoria"
+        android:label="activity_alarm_podkategoria"
+        tools:layout="@layout/activity_alarm_podkategoria" >
+        <action
+            android:id="@+id/action_alarmPodkategoria_to_zgloszenie"
+            app:destination="@id/zgloszenie" />
+    </activity>
 </navigation>

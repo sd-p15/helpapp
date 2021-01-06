@@ -1,6 +1,10 @@
 package com.example.HelpApp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,7 +34,9 @@ public class wiedza extends AppCompatActivity {
         imageButton13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openBazawiedzy();
+                Navigation.findNavController(v).navigate(R.id.action_wiedza_to_bazawiedzy);
+//
+//                openBazawiedzy();
             }
         });
         imageButton14.setOnClickListener(new View.OnClickListener() {
