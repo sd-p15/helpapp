@@ -43,13 +43,18 @@
         <activity android:name=".alarm" />
         <activity android:name=".mail" />
         <activity android:name=".ciekawostka" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".MatchingActivity" />
+
+        <activity android:name=".BaseActivity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"/>
+
     </application>
 
 </manifest>

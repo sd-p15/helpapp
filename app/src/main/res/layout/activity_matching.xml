@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:elevation="10dp"
+    android:background="@color/white"
+    android:id="@+id/bottonNavBar"
+    android:paddingTop="5dp"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:foregroundGravity="bottom">
+
+    
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="Matching"
+                android:layout_weight="1"
+                android:button="@null"
+                android:padding="2dp"
+                android:checked="false"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/ic_back"
+                android:textColor="@color/black"
+                android:id="@+id/matching"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:checked="false"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/ic_profile"
+                android:textColor="@color/black"
+                android:id="@+id/watchList"
+                android:text="Watchlist"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:id="@+id/rates"
+                android:button="@null"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/ic_settings"
+                android:textColor="@color/black"
+                android:text="Rates"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:padding="2dp"
+                android:checked="false"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/ic_home"
+                android:textColor="@color/black"
+                android:id="@+id/deals"
+                android:text="Deals"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:padding="2dp"
+                android:checked="false"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/ic_info"
+                android:textColor="@color/black"
+                android:id="@+id/listing"
+                android:text="Listing"/>
+
+
+        </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dynamicContent"
+        android:orientation="vertical"
+        android:layout_marginBottom="56dp"
+        android:background="@color/white"
+        android:layout_gravity="bottom">
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
