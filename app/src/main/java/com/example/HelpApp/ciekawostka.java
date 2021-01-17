@@ -1,20 +1,23 @@
 package com.example.HelpApp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.media.Image;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.io.File;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.net.URI;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 
 public class ciekawostka extends AppCompatActivity {
@@ -27,6 +30,7 @@ public class ciekawostka extends AppCompatActivity {
 
 
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,13 +54,47 @@ public class ciekawostka extends AppCompatActivity {
         });
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void pobierzCiekawostke(){
 
         TextView tekstCiekawostki = (TextView) findViewById(R.id.textView18);
+        tekstCiekawostki.setMovementMethod(new ScrollingMovementMethod());
+
+        String data;
+
+        StringBuilder sbuffer = new StringBuilder();
+        InputStream is = this.getResources().openRawResource(R.raw.ciekawostki);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+
+        if (is != null){
+
+            try{
+
+                Integer counter = 0;
+
+                while ((data = reader.readLine()) != null) {
+
+                    if (counter.equals(numerCiekawostki)){
+                        sbuffer.append(data.replace("&", "\n").replace(
+                                " - ", "\n\n"));
+                    }
+                    counter ++;
+
+                }
+
+                is.close();
+
+
+            } catch (IOException e) {
+                sbuffer.append("nie wczytały się");
+                e.printStackTrace();
+            }
+            tekstCiekawostki.setText(sbuffer);
+        }
+
+
         ImageView obrazekCiekawostki = (ImageView) findViewById(R.id.imageView);
 
-        String text = "Przykładowy tekst ciekawostki" + numerCiekawostki;
-            tekstCiekawostki.setText(text);
         Uri image = Uri.parse("android.resource://com.example.HelpApp/drawable/c" +
                 numerCiekawostki);
         obrazekCiekawostki.setImageURI(image);
@@ -64,7 +102,7 @@ public class ciekawostka extends AppCompatActivity {
 
 
     public void openWiedza() {
-        Intent intent = new Intent(this, wiedza.class);
+        Intent intent = new Intent(this, bazawiedzy.class);
         startActivity(intent);
     }
 };

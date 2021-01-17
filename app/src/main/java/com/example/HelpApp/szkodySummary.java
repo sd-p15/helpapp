@@ -11,7 +11,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Calendar;
@@ -20,6 +23,7 @@ import java.util.Date;
 public class szkodySummary extends AppCompatActivity {
     String nazwaFolderu;
     String template;
+    String dane;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +49,28 @@ public class szkodySummary extends AppCompatActivity {
         komentarz = intent.getStringExtra(szkodyPodkategoria.KOMENTARZ);
         nazwaFolderu= "Szkoda " + kategoria + currentTime.toString();
 
-        template="Zgłaszający: Imię Nazwisko " +
-                "\n Nr telefonu: 666666666 " +
+        //wczytywanie imienia i nazwiska oraz numeru telefonu
+        FileReader fr=null;
+        File myData = new File(Environment.getExternalStorageDirectory().toString() , "HelpApp/Main/Dane.txt" );
+        StringBuilder stringBuilder = new StringBuilder();
+        try{
+            fr = new FileReader(myData);
+            BufferedReader br = new BufferedReader(fr);
+            String line = br.readLine();
+            while (line != null){
+                stringBuilder.append(line).append('\n');
+                line= br.readLine();
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e){
+            e.printStackTrace();
+        } finally {
+            String fileContents =  stringBuilder.toString();
+            dane = fileContents;
+        }
+        //templatka zgłoszenia
+        template="Zgłaszający" + dane +
                 "\n Lokalizacja: "+ lokalizacjaUlica +"\n" + lokalizacjaLong + "\n" + lokalizacjaLat +
                 "\n Rodzaj zdarzenia: " + kategoria  +
                 "\n Opis: " + komentarz;
