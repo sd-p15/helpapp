@@ -76,10 +76,13 @@ public class alarmSummary extends AppCompatActivity {
             dane = fileContents;
         }
         //templatka zgłoszenia ( interaktywna )
-        template="Zgłaszający: " + dane +
-                "Lokalizacja: "+ lokalizacjaUlica +"\n" + lokalizacjaLong + "\n" + lokalizacjaLat +
+
+        template="ZGŁASZAJĄCY ZDARZENIE\n\n" + dane +
+                "\n\n\nINFORMACJE O ZDARZENIU\n" +
+                "\n Lokalizacja: "+ lokalizacjaUlica +"\n" + lokalizacjaLong + "\n" + lokalizacjaLat +
                 "\n Rodzaj zdarzenia: " + kategoria + " ( " +podkategoria + " )" +
                 "\n Opis: " + komentarz;
+
         //pokazanie treści
         tresc.setText(template);
 

@@ -82,7 +82,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="203dp"
-        android:hint="Opisz Szkodę" />
+        android:hint="Opisz Szkodę"
+        android:layout_alignParentLeft="true" />
 
     <EditText
         android:id="@+id/address"
@@ -92,7 +93,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="349dp"
-        android:hint="Wpisz adres Szkody" />
+        android:hint="Wpisz adres Szkody"
+        android:layout_alignParentLeft="true" />
 
     <TextView
         android:id="@+id/textViewLub"

@@ -70,7 +70,8 @@ public class szkodySummary extends AppCompatActivity {
             dane = fileContents;
         }
         //templatka zgłoszenia
-        template="Zgłaszający" + dane +
+        template="ZGŁASZAJĄCY ZDARZENIE\n\n" + dane +
+                "\n\n\nINFORMACJE O ZDARZENIU\n" +
                 "\n Lokalizacja: "+ lokalizacjaUlica +"\n" + lokalizacjaLong + "\n" + lokalizacjaLat +
                 "\n Rodzaj zdarzenia: " + kategoria  +
                 "\n Opis: " + komentarz;
