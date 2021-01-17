@@ -30,7 +30,8 @@ public class szkodySummary extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_szkody_summary);
 
-        Button dalej= (Button) findViewById(R.id.wyslij);
+        Button dalej= (Button) findViewById(R.id.buttonDalej2);
+        Button popraw= (Button) findViewById(R.id.buttonPopraw3);
         TextView tresc = (TextView) findViewById(R.id.szablon);
 
         //zmienne
@@ -84,10 +85,29 @@ public class szkodySummary extends AppCompatActivity {
             public void onClick(View v) {
                 CreateFolder();
                 createFile(v, nazwaFolderu );
-                //wyslij();
+                openMail();
+            }
+        });
+        popraw.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                openStatus();
             }
         });
     }
+    public void openMail() {
+        Intent send = new Intent(this, mail.class);     // uruchom skrypt mail
+        startActivity(send);
+
+//        Intent intent = new Intent(this, alarmStusus.class);    // uruchom skrypt alarmStatus
+//        startActivity(intent);
+    };
+
+    public void openStatus() {
+        Intent intent = new Intent(this, szkody.class);      // uruchom skrypt alarm
+        startActivity(intent);
+    };
     private void CreateFolder() {
         //inicjacja
 
