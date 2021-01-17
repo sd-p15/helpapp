@@ -1,5 +1,6 @@
 package com.example.HelpApp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
@@ -7,6 +8,7 @@ import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckedTextView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -54,12 +56,15 @@ public class ciekawostka extends AppCompatActivity {
         });
     }
 
+    @SuppressLint("SetTextI18n")
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void pobierzCiekawostke(){
 
-        TextView tekstCiekawostki = (TextView) findViewById(R.id.textView18);
+        CheckedTextView tekstCiekawostki = (CheckedTextView) findViewById(R.id.textView18);
         tekstCiekawostki.setMovementMethod(new ScrollingMovementMethod());
 
+        CheckedTextView numCiekawostki = (CheckedTextView) findViewById(R.id.checkedTextView1410);
+        numCiekawostki.setText("CIEKAWOSTKA #" + numerCiekawostki);
         String data;
 
         StringBuilder sbuffer = new StringBuilder();
