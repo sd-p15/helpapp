@@ -61,4 +61,21 @@
         android:text="Zgłaszający:\n   Jan Nowak \n\n Nr telefonu:\n   +48 999 999 999 \n\n Lokalizacja:\n   ul. Słowackiego 52/54, Warszawa\n\n
 Rodzaj zdarzenia:\n   wypadek (potrącenie pieszego) \n\n Opis zdarzenia:\n   Kobieta 100 lat nie oddycha.
  Wpadła pod rower. Robię RKO." />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name"
+            app:menu="@menu/top_app_bar"
+            app:navigationIcon="@drawable/ic_back"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
 </RelativeLayout>
