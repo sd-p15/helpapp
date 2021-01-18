@@ -6,457 +6,546 @@
     android:layout_height="match_parent">
 
     <ScrollView
-        android:layout_width="327dp"
-        android:layout_height="636dp"
+        android:id="@+id/scrollView2"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652">
+        app:layout_constraintTop_toTopOf="@id/appBarLayout2"
+        app:layout_constraintVertical_bias="0.55">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
+            android:orientation="vertical">
 
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka00"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 00" />
+                android:text="Ciekawostka nr 00"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka01"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 01" />
+                android:text="Ciekawostka nr 01"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka02"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 02" />
+                android:text="Ciekawostka nr 02"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka03"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 03" />
+                android:text="Ciekawostka nr 03"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka04"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 04" />
+                android:text="Ciekawostka nr 04"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka05"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 05" />
+                android:text="Ciekawostka nr 05"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka06"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 06" />
+                android:text="Ciekawostka nr 06"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka07"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 07" />
+                android:text="Ciekawostka nr 07"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka08"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 08" />
+                android:text="Ciekawostka nr 08"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka09"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 09" />
+                android:text="Ciekawostka nr 09"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 10" />
+                android:text="Ciekawostka nr 10"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 11" />
+                android:text="Ciekawostka nr 11"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 12" />
+                android:text="Ciekawostka nr 12"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 13" />
+                android:text="Ciekawostka nr 13"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 14" />
+                android:text="Ciekawostka nr 14"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 15" />
+                android:text="Ciekawostka nr 15"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 16" />
+                android:text="Ciekawostka nr 16"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka17"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 17" />
+                android:text="Ciekawostka nr 17"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka18"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 18" />
+                android:text="Ciekawostka nr 18"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka19"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 19" />
+                android:text="Ciekawostka nr 19"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 20" />
+                android:text="Ciekawostka nr 20"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka21"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 21" />
+                android:text="Ciekawostka nr 21"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka22"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 22" />
+                android:text="Ciekawostka nr 22"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka23"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 23" />
+                android:text="Ciekawostka nr 23"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka24"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 24" />
+                android:text="Ciekawostka nr 24"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka25"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 25" />
+                android:text="Ciekawostka nr 25"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka26"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 26" />
+                android:text="Ciekawostka nr 26"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka27"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 27" />
+                android:text="Ciekawostka nr 27"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka28"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 28" />
+                android:text="Ciekawostka nr 28"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka29"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 29" />
+                android:text="Ciekawostka nr 29"
+                app:backgroundTint="#0088c3" />
+
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka30"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 30" />
+                android:text="Ciekawostka nr 30"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka33"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 33" />
+                android:text="Ciekawostka nr 33"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka32"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 32" />
+                android:text="Ciekawostka nr 32"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka31"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 31" />
+                android:text="Ciekawostka nr 31"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka34"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 34" />
+                android:text="Ciekawostka nr 34"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka35"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 35" />
+                android:text="Ciekawostka nr 35"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka36"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 36" />
+                android:text="Ciekawostka nr 36"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka37"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 37" />
+                android:text="Ciekawostka nr 37"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka38"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 38" />
+                android:text="Ciekawostka nr 38"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka39"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 39" />
-           
+                android:text="Ciekawostka nr 39"
+                app:backgroundTint="#0088c3" />
+
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka40"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 40" />
+                android:text="Ciekawostka nr 40"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka41"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 41" />
+                android:text="Ciekawostka nr 41"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka42"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 42" />
+                android:text="Ciekawostka nr 42"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka43"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 43" />
+                android:text="Ciekawostka nr 43"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka44"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 44" />
+                android:text="Ciekawostka nr 44"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka45"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 45" />
+                android:text="Ciekawostka nr 45"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka46"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 46" />
+                android:text="Ciekawostka nr 46"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka47"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 47" />
+                android:text="Ciekawostka nr 47"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka48"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 48" />
+                android:text="Ciekawostka nr 48"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka49"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 49" />
+                android:text="Ciekawostka nr 49"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka50"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 50" />
+                android:text="Ciekawostka nr 50"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka51"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 51" />
+                android:text="Ciekawostka nr 51"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka52"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 52" />
+                android:text="Ciekawostka nr 52"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka53"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 53" />
+                android:text="Ciekawostka nr 53"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka54"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 54" />
+                android:text="Ciekawostka nr 54"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka55"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 55" />
+                android:text="Ciekawostka nr 55"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka56"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 56" />
+                android:text="Ciekawostka nr 56"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka57"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 57" />
+                android:text="Ciekawostka nr 57"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka58"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 58" />
+                android:text="Ciekawostka nr 58"
+                app:backgroundTint="#0088c3" />
 
             <Button
-                app:backgroundTint="#0088c3"
                 android:id="@+id/ciekawostka59"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciekawostka nr 59" />
+                android:text="Ciekawostka nr 59"
+                app:backgroundTint="#0088c3" />
 
-            <com.google.android.material.appbar.AppBarLayout
+            <Button
+                android:id="@+id/ciekawostka60"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:text="Ciekawostka nr 60"
+                app:backgroundTint="#0088c3" />
 
-                <com.google.android.material.appbar.MaterialToolbar
-                    android:id="@+id/topAppBar"
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    app:title="@string/app_name"
-                    app:menu="@menu/top_app_bar"
-                    app:navigationIcon="@drawable/ic_back"
-                    style="@style/Widget.MaterialComponents.Toolbar.Primary"
-                    />
+            <Button
+                android:id="@+id/ciekawostka61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciekawostka nr 61"
+                app:backgroundTint="#0088c3" />
 
-            </com.google.android.material.appbar.AppBarLayout>
+            <Button
+                android:id="@+id/ciekawostka62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciekawostka nr 62"
+                app:backgroundTint="#0088c3" />
+
+            <Button
+                android:id="@+id/ciekawostka63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciekawostka nr 63"
+                app:backgroundTint="#0088c3" />
+
+            <Button
+                android:id="@+id/ciekawostka64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciekawostka nr 64"
+                app:backgroundTint="#0088c3" />
+
+            <Button
+                android:id="@+id/ciekawostka65"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciekawostka nr 65"
+                app:backgroundTint="#0088c3" />
+
+            <Button
+                android:id="@+id/ciekawostka66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciekawostka nr 66"
+                app:backgroundTint="#0088c3" />
+
+            <Button
+                android:id="@+id/ciekawostka67"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciekawostka nr 67"
+                app:backgroundTint="#0088c3" />
+
+            <Button
+                android:id="@+id/ciekawostka68"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciekawostka nr 68"
+                app:backgroundTint="#0088c3" />
+
+            <Button
+                android:id="@+id/ciekawostka69"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciekawostka nr 69"
+                app:backgroundTint="#0088c3" />
+
+            <Button
+                android:id="@+id/ciekawostka70"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciekawostka nr 70"
+                app:backgroundTint="#0088c3" />
+
+            <Button
+                android:id="@+id/ciekawostka71"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciekawostka nr 71"
+                app:backgroundTint="#0088c3" />
+
+
+
 
         </LinearLayout>
     </ScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/top_app_bar"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/app_name" />
+    </com.google.android.material.appbar.AppBarLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

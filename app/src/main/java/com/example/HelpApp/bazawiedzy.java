@@ -76,6 +76,18 @@ public class bazawiedzy extends AppCompatActivity {
         Button c57 = findViewById(R.id.ciekawostka57);
         Button c58 = findViewById(R.id.ciekawostka58);
         Button c59 = findViewById(R.id.ciekawostka59);
+        Button c60 = findViewById(R.id.ciekawostka60);
+        Button c61 = findViewById(R.id.ciekawostka61);
+        Button c62 = findViewById(R.id.ciekawostka62);
+        Button c63 = findViewById(R.id.ciekawostka63);
+        Button c64 = findViewById(R.id.ciekawostka64);
+        Button c65 = findViewById(R.id.ciekawostka65);
+        Button c66 = findViewById(R.id.ciekawostka66);
+        Button c67 = findViewById(R.id.ciekawostka67);
+        Button c68 = findViewById(R.id.ciekawostka68);
+        Button c69 = findViewById(R.id.ciekawostka69);
+        Button c70 = findViewById(R.id.ciekawostka70);
+        Button c71 = findViewById(R.id.ciekawostka71);
         
 
         c00.setOnClickListener(v -> {
@@ -375,6 +387,66 @@ public class bazawiedzy extends AppCompatActivity {
 
         c59.setOnClickListener(v -> {
             numerCiekawostki = 59;
+            openCiekawostka();
+        });
+
+        c60.setOnClickListener(v -> {
+            numerCiekawostki = 60;
+            openCiekawostka();
+        });
+
+        c61.setOnClickListener(v -> {
+            numerCiekawostki = 61;
+            openCiekawostka();
+        });
+
+        c62.setOnClickListener(v -> {
+            numerCiekawostki = 62;
+            openCiekawostka();
+        });
+
+        c63.setOnClickListener(v -> {
+            numerCiekawostki = 63;
+            openCiekawostka();
+        });
+
+        c64.setOnClickListener(v -> {
+            numerCiekawostki = 64;
+            openCiekawostka();
+        });
+
+        c65.setOnClickListener(v -> {
+            numerCiekawostki = 65;
+            openCiekawostka();
+        });
+
+        c66.setOnClickListener(v -> {
+            numerCiekawostki = 66;
+            openCiekawostka();
+        });
+
+        c67.setOnClickListener(v -> {
+            numerCiekawostki = 67;
+            openCiekawostka();
+        });
+
+        c68.setOnClickListener(v -> {
+            numerCiekawostki = 68;
+            openCiekawostka();
+        });
+
+        c69.setOnClickListener(v -> {
+            numerCiekawostki = 69;
+            openCiekawostka();
+        });
+
+        c70.setOnClickListener(v -> {
+            numerCiekawostki = 70;
+            openCiekawostka();
+        });
+
+        c71.setOnClickListener(v -> {
+            numerCiekawostki = 71;
             openCiekawostka();
         });
 
